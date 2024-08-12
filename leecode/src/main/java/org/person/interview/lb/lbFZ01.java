@@ -1,4 +1,4 @@
-package com.baidu.interview.lb;
+package main.java.org.person.interview.lb;
 
 /**
  * 链表反转

@@ -1,4 +1,4 @@
-package com.baidu.interview.sz;
+package main.java.org.person.interview.sz;
 
 import java.util.ArrayList;
 import java.util.Arrays;
