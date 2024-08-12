@@ -1,4 +1,4 @@
-package com.baidu.interview.sz;
+package main.java.org.person.interview.sz;
 
 /**
  * 合并2个有序数组

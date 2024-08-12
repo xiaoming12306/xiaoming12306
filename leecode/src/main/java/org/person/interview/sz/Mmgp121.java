@@ -1,4 +1,4 @@
-package com.baidu.interview.sz;
+package main.java.org.person.interview.sz;
 
 public class Mmgp121 {
   public static int maxProfit(int[] prices) {

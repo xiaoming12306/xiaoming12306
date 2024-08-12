@@ -1,4 +1,4 @@
-package com.baidu.interview.sz;
+package main.java.org.person.interview.sz;
 
 public class 移动0 {
   public static void moveZeroes(int[] nums) {
