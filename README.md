@@ -3,10 +3,10 @@
 - 👀 I’m interested in software development, machine learning, and open-source projects.
 - 🌱 I’m currently learning advanced Python programming and data analysis techniques.
 - 💞️ I’m looking to collaborate on innovative projects that make a positive impact on society.
-- 📫 How to reach me: [Email](mailto:your-email@example.com) | [LinkedIn](https://www.linkedin.com/in/your-profile) | [Twitter](https://twitter.com/your-username)
+- 📫 How to reach me: [Email](mailto:15201609971@163.com) | [LinkedIn](https://www.linkedin.com/in/your-profile) | [Twitter](https://twitter.com/your-username)
 ## My Work
 - 🔭 I’m currently working on a personal project that aims to simplify task management for individuals.
-- 🌟 I’m proud of contributing to [Project Name](https://github.com/link-to-project), where I added features to improve user experience.
+- 🌟 I’m proud of contributing to [Project Name](https://github.com/xiaoming12306), where I added features to improve user experience.
 ## Learning Journey
 - 📚 I regularly write blog posts about what I'm learning. Check out my [Blog](https://your-blog-link.com).
 - 🎓 I share my coding journey and tutorials on my [YouTube Channel](https://www.youtube.com/channel/your-channel).
