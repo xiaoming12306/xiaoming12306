@@ -1,8 +1,6 @@
 package main.java.org.person.interview.sz;
 
-/**
- * 合并2个有序数组
- */
+/** 合并2个有序数组 */
 public class mergeSortedArray {
   public static void main(String[] args) {
     int[] array1 = {1, 3, 5};
@@ -14,7 +12,6 @@ public class mergeSortedArray {
       System.out.print(i + " ");
     }
   }
-
 
   public static int[] mergeSortedArray(int[] array1, int[] array2) {
     int[] mergedArray = new int[array1.length + array2.length];
@@ -39,4 +36,3 @@ public class mergeSortedArray {
     return mergedArray;
   }
 }
-
