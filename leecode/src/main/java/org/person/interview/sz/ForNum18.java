@@ -25,19 +25,19 @@ public class ForNum18 {
     Arrays.sort(nums);
     long sum = 0;
     for (int i = 0; i < nums.length - 3; i++) {
-      if (i > 0 && nums[i] == nums[i -1]) {
+      if (i > 0 && nums[i] == nums[i - 1]) {
         continue;
       }
       for (int j = i + 1; j < nums.length - 2; j++) {
-        if (j > i + 1 && nums[j] == nums[j -1]) {
+        if (j > i + 1 && nums[j] == nums[j - 1]) {
           continue;
         }
         int L = j + 1;
         int R = nums.length - 1;
         while (L < R) {
-          sum = (long)nums[i] + (long)nums[j] + (long)nums[L] + (long)nums[R];
+          sum = (long) nums[i] + (long) nums[j] + (long) nums[L] + (long) nums[R];
           if (sum > target) {
-              R--;
+            R--;
           } else if (sum < target) {
             L++;
           } else {
@@ -50,7 +50,7 @@ public class ForNum18 {
             while (L < R && nums[L] == nums[L + 1]) {
               L++;
             }
-            
+
             while (L < R && nums[R] == nums[R - 1]) {
               R--;
             }
@@ -64,7 +64,7 @@ public class ForNum18 {
   }
 
   public static void main(String[] args) {
-    int[] nums = {2,3,3,2, 2, 2};
+    int[] nums = {2, 3, 3, 2, 2, 2};
     List<List<Integer>> res = fourSum(nums, 8);
     for (List<Integer> list : res) {
       System.out.println(list.toString());
