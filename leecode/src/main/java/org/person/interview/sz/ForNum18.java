@@ -1,4 +1,4 @@
-package main.java.org.person.interview.sz;
+package org.person.interview.sz;
 
 import java.util.ArrayList;
 import java.util.Arrays;
@@ -17,8 +17,8 @@ public class ForNum18 {
   * */
 
   public static List<List<Integer>> fourSum(int[] nums, int target) {
-    List<List<Integer>> res = new ArrayList<>();
-    List<Integer> resOne = new ArrayList<>();
+    List<List<Integer>> res = new ArrayList<List<Integer>>();
+    List<Integer> resOne = new ArrayList<Integer>();
     if (nums.length < 4) {
       return res;
     }
@@ -46,7 +46,7 @@ public class ForNum18 {
             resOne.add(nums[L]);
             resOne.add(nums[R]);
             res.add(resOne);
-            resOne = new ArrayList<>();
+            resOne = new ArrayList<Integer>();
             while (L < R && nums[L] == nums[L + 1]) {
               L++;
             }
