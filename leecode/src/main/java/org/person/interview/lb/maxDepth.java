@@ -1,4 +1,4 @@
-package main.java.org.person.interview.lb;
+package org.person.interview.lb;
 
 public class maxDepth {
   public static void main(String[] args) {

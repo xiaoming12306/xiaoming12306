@@ -1,4 +1,4 @@
-package main.java.org.person.interview.sz;
+package org.person.interview.sz;
 
 public class max子数组和53 {
   public static int maxSubArray(int[] nums) {

@@ -1,4 +1,4 @@
-package main.java.org.person.interview.sz;
+package org.person.interview.sz;
 
 /** 合并2个有序数组 */
 public class mergeSortedArray {

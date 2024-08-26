@@ -1,4 +1,4 @@
-package main.java.org.person.interview.sz;
+package org.person.interview.sz;
 
 /** 二分查询 */
 public class BinaryQuery206 {

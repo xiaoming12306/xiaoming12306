@@ -1,4 +1,4 @@
-package main.java.org.person.interview.lb;
+package org.person.interview.lb;
 
 /** 链表反转 */
 public class lbFZ01 {
