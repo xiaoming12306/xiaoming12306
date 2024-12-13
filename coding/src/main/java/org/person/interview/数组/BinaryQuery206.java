@@ -1,4 +1,4 @@
-package org.person.interview.sz;
+package org.person.interview.数组;
 
 /** 二分查询 */
 public class BinaryQuery206 {

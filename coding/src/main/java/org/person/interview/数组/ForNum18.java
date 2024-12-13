@@ -1,4 +1,4 @@
-package org.person.interview.sz;
+package org.person.interview.数组;
 
 import java.util.ArrayList;
 import java.util.Arrays;

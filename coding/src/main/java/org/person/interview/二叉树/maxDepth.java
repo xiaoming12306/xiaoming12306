@@ -1,4 +1,4 @@
-package org.person.interview.lb;
+package org.person.interview.二叉树;
 
 public class maxDepth {
   public static void main(String[] args) {

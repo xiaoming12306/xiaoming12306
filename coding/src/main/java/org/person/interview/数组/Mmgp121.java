@@ -1,4 +1,4 @@
-package org.person.interview.sz;
+package org.person.interview.数组;
 
 public class Mmgp121 {
   public static int maxProfit(int[] prices) {
