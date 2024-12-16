@@ -1,7 +1,7 @@
 package org.person.interview.链表;
 
 /** 给定一个已排序的链表的头 head ， 删除原始链表中所有重复数字的节点，只留下不同的数字 。返回 已排序的链表 。 1 -> 1 -> 1 -> 2 -> 3 ==> 2 -> 3 */
-public class rmNodes82 {
+public class RmDuplicate_82 {
 
   public static class ListNode {
     int val;
