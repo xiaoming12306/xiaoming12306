@@ -2,6 +2,11 @@
 <project version="4">
   <component name="RemoteRepositoriesConfiguration">
     <remote-repository>
+      <option name="id" value="central" />
+      <option name="name" value="Central Repository" />
+      <option name="url" value="https://repo.maven.apache.org/maven2" />
+    </remote-repository>
+    <remote-repository>
       <option name="id" value="baidu-nexus" />
       <option name="name" value="baidu-nexus" />
       <option name="url" value="https://maven.baidu-int.com/nexus/content/groups/public" />
@@ -35,6 +40,11 @@
       <option name="id" value="Baidu_Local" />
       <option name="name" value="Baidu_Local" />
       <option name="url" value="https://maven.baidu-int.com/nexus/content/groups/public" />
+    </remote-repository>
+    <remote-repository>
+      <option name="id" value="my-dev-repo" />
+      <option name="name" value="my-dev-repo" />
+      <option name="url" value="http://dev-repo-url" />
     </remote-repository>
     <remote-repository>
       <option name="id" value="Baidu_Local_Snapshots" />
