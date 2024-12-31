@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <groupId>org.example</groupId>
+    <artifactId>coding</artifactId>
+    <version>1.0-SNAPSHOT</version>
+    <packaging>jar</packaging>
+
+    <name>leecode</name>
+    <url>http://maven.apache.org</url>
+
+    <properties>
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+
+        <!-- spotless to checkstyle -->
+        <maven.plugin.spotless.version>2.30.0</maven.plugin.spotless.version>
+        <spotless.scala.scalafmt.version>3.6.1</spotless.scala.scalafmt.version>
+        <spotless.java.googlejavaformat.version>1.7</spotless.java.googlejavaformat.version>
+        <spotless.python.includes></spotless.python.includes>
+        <spotless.python.black.version>22.3.0</spotless.python.black.version>
+        <flexmark.version>0.62.2</flexmark.version>
+
+        <flink.version>1.15.4</flink.version>
+    </properties>
+
+    <dependencies>
+        <!-- https://mvnrepository.com/artifact/com.fasterxml.jackson.core/jackson-databind -->
+        <dependency>
+            <groupId>com.fasterxml.jackson.core</groupId>
+            <artifactId>jackson-databind</artifactId>
+            <version>2.15.2</version>
+        </dependency>
+
+        <dependency>
+            <groupId>junit</groupId>
+            <artifactId>junit</artifactId>
+            <version>3.8.1</version>
+            <scope>test</scope>
+        </dependency>
+    </dependencies>
+    <build>
+        <plugins>
+            <plugin>
+                <groupId>com.diffplug.spotless</groupId>
+                <artifactId>spotless-maven-plugin</artifactId>
+                <version>${maven.plugin.spotless.version}</version>
+                <configuration>
+                    <upToDateChecking>
+                        <enabled>true</enabled>
+                    </upToDateChecking>
+                    <java>
+                        <includes>
+                            <include>src/main/java/**/*.java</include>
+                            <include>src/test/java/**/*.java</include>
+                        </includes>
+                        <googleJavaFormat>
+                            <version>${spotless.java.googlejavaformat.version}</version>
+                            <style>GOOGLE</style>
+                        </googleJavaFormat>
+                        <removeUnusedImports></removeUnusedImports>
+                    </java>
+                    <pom>
+                        <includes>
+                            <include>pom.xml</include>
+                        </includes>
+                        <sortPom>
+                            <encoding>${project.build.sourceEncoding}</encoding>
+                            <expandEmptyElements>true</expandEmptyElements>
+                            <indentSchemaLocation>true</indentSchemaLocation>
+                            <nrOfIndentSpace>4</nrOfIndentSpace>
+                        </sortPom>
+                    </pom>
+                    <python>
+                        <includes>
+                            <include>${spotless.python.includes}</include>
+                        </includes>
+                        <black>
+                            <version>${spotless.python.black.version}</version>
+                        </black>
+                    </python>
+                    <markdown>
+                        <includes>
+                            <include>docs/**/*.md</include>
+                            <include>*/README.md</include>
+                            <include>docker/playground/README.md</include>
+                        </includes>
+                        <excludes>
+                            <exclude>docs/*/lib/python*/**/*.md</exclude>
+                        </excludes>
+                        <flexmark>
+                            <version>${flexmark.version}</version>
+                        </flexmark>
+                    </markdown>
+                </configuration>
+                <executions>
+                    <execution>
+                        <goals>
+                            <goal>check</goal>
+                        </goals>
+                        <phase>compile</phase>
+                    </execution>
+                </executions>
+            </plugin>
+
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-compiler-plugin</artifactId>
+                <version>3.1</version>
+                <configuration>
+                    <source>8</source>
+                    <target>8</target>
+                </configuration>
+            </plugin>
+        </plugins>
+    </build>
+</project>
