@@ -34,5 +34,5 @@ public class BatchDemo {
 //      wordCountStream.print("WordCountBatch========").setParallelism(1);
 //      // 5.启动任务
 //      env.execute(BatchDemo.class.getSimpleName());
-    }
+//    }
 }
