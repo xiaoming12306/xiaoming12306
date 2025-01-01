@@ -1,4 +1,4 @@
-package org.person.interview.链表
+package org.person.interview.lb
 
 abstract class ListNode {
   var next: ListNode

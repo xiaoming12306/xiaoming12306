@@ -1,4 +1,4 @@
-package org.person.interview.链表;
+package org.person.interview.lb;
 
 /**
  * 给你单链表的头节点 head ，请你反转链表，并返回反转后的链表。 示例 1： 1 -> 2 -> 3 -> 4 -> 5 5 -> 4 -> 3 -> 2 -> 1 输入：head =

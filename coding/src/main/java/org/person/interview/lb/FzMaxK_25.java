@@ -1,4 +1,4 @@
-package org.person.interview.链表;
+package org.person.interview.lb;
 
 /**
  * 给你链表的头节点 head ，每 k 个节点一组进行翻转，请你返回修改后的链表。 k 是一个正整数，它的值小于或等于链表的长度。如果节点总数不是 k
