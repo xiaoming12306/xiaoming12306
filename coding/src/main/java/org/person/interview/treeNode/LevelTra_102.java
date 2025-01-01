@@ -1,4 +1,4 @@
-package org.person.interview.二叉树;
+package org.person.interview.treeNode;
 
 import java.util.ArrayList;
 import java.util.LinkedList;

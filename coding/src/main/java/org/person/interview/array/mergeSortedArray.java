@@ -1,4 +1,4 @@
-package org.person.interview.数组;
+package org.person.interview.array;
 
 /** 合并2个有序数组 */
 public class mergeSortedArray {

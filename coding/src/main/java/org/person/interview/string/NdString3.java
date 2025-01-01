@@ -1,4 +1,4 @@
-package org.person.interview.字符串;
+package org.person.interview.string;
 
 import java.util.HashMap;
 import java.util.Map;

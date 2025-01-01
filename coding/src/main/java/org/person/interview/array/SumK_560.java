@@ -1,4 +1,4 @@
-package org.person.interview.数组;
+package org.person.interview.array;
 
 import java.util.HashMap;
 import java.util.Map;

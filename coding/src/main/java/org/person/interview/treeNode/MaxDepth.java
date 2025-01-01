@@ -1,4 +1,4 @@
-package org.person.interview.二叉树;
+package org.person.interview.treeNode;
 
 public class MaxDepth {
   public static class TreeNode {

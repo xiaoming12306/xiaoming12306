@@ -1,4 +1,4 @@
-package org.person.interview.字符串;
+package org.person.interview.string;
 
 /** 给你一个字符串 s，找到 s 中最长的 回文 子串 。 */
 public class HwString5 {

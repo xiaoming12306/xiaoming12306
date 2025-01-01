@@ -1,4 +1,4 @@
-package org.person.interview.线程池;
+package org.person.interview.thread;
 
 import java.util.concurrent.ArrayBlockingQueue;
 import java.util.concurrent.ConcurrentHashMap;
