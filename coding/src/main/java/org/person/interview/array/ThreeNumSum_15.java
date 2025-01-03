@@ -69,7 +69,7 @@ public class ThreeNumSum_15 {
   }
 
   public static void main(String[] args) {
-    int[] num = {-1, 0, 1, 2, -1, -4};
+    int[] num = {0, 0, 0};
     System.out.println(threeNum(num));
   }
 }
