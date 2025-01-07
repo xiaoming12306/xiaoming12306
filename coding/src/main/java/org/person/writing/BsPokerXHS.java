@@ -12,64 +12,60 @@ public class BsPokerXHS {
    * @return true
    */
   public static Boolean isPokerLx(String[] pokes) {
-    // 1. 判断长度和null
-    if (pokes == null && pokes.length < 5) {
+    if (pokes == null || pokes.length < 4) {
       return false;
     }
-
-    // 2. 采用hashMap的方式存储 key: 花色 value: [1, 2, 4 , ...]
     Map<String, List<Integer>> pokerMap = new HashMap<>();
     for (String poke : pokes) {
       String hs = poke.substring(0, 1);
       String hv = poke.substring(1);
-      List<Integer> pokeValue = pokerMap.get(hs);
-      if (pokeValue == null) {
-        pokeValue = new ArrayList<>();
+      List<Integer> list = pokerMap.get(hs);
+      if (list == null) {
+        list = new ArrayList<>();
       }
-      // 特殊处理 j q k a
-      pokerMap.put(hs, cover(hv, pokeValue));
+      pokerMap.put(hs, cover(list, hv));
     }
 
-    // 3. 处理判断是否连续
-    for (Map.Entry<String, List<Integer>> pokeEntry : pokerMap.entrySet()) {
-      List<Integer> hvList = pokeEntry.getValue();
-      Collections.sort(hvList);
-      int cn = 1;
-      for (int j = 1; j < hvList.size(); j++) {
-        int a = hvList.get(j);
-        int b = hvList.get(j - 1);
-        if (b + 1 == a) {
-          cn++;
-          if (cn >= 5) {
-            return true;
+    for (Map.Entry<String, List<Integer>> map : pokerMap.entrySet()) {
+      List<Integer> value = map.getValue();
+      Collections.sort(value);
+      int n = 1;
+      if (value.size() >= 4) {
+        for (int i = 1; i < value.size(); i++) {
+          if (value.get(i) - value.get(i - 1) == 1) {
+            n++;
+            if (n >= 5) {
+              return true;
+            }
+          } else {
+            n = 1;
           }
-        } else {
-          cn = 1;
         }
       }
     }
     return false;
   }
 
-  private static List<Integer> cover(String hv, List<Integer> pokeValue) {
+  private static List<Integer> cover(List<Integer> list, String hv) {
     switch (hv) {
       case "j":
-        pokeValue.add(11);
+        list.add(11);
         break;
       case "q":
-        pokeValue.add(12);
+        list.add(12);
         break;
       case "k":
-        pokeValue.add(13);
+        list.add(13);
         break;
       case "a":
-        pokeValue.add(1);
-        pokeValue.add(14);
+        list.add(14);
+        list.add(1);
         break;
       default:
-        pokeValue.add(Integer.parseInt(hv));
+        list.add(Integer.parseInt(hv));
     }
-    return pokeValue;
+
+    return list;
   }
 
   public static void main(String[] args) {

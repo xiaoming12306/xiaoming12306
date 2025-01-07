@@ -1,4 +1,4 @@
-package org.person.interview.array;
+package org.person.interview.hs;
 
 import java.util.ArrayList;
 import java.util.List;
