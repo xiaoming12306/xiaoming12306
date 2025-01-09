@@ -20,8 +20,8 @@ public class MaxK215 {
 
   // 方法二: 快排思想
   public static int findKthLargest1(int[] nums, int k) {
-      int n = nums.length;
-      return quickSelect(nums, 0, n - 1, n - k);
+    int n = nums.length;
+    return quickSelect(nums, 0, n - 1, n - k);
   }
 
   private static int quickSelect(int[] nums, int l, int r, int k) {
@@ -33,8 +33,10 @@ public class MaxK215 {
     int i = l - 1;
     int j = r + 1;
     while (i < j) {
-      do i++; while (nums[i] < x);
-      do j--; while (nums[j] > x);
+      do i++;
+      while (nums[i] < x);
+      do j--;
+      while (nums[j] > x);
       if (i < j) {
         int tmp = nums[i];
         nums[i] = nums[j];
