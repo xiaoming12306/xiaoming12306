@@ -18,8 +18,39 @@ public class MaxK215 {
     return res;
   }
 
+  // 方法二: 快排思想
+  public static int findKthLargest1(int[] nums, int k) {
+      int n = nums.length;
+      return quickSelect(nums, 0, n - 1, n - k);
+  }
+
+  private static int quickSelect(int[] nums, int l, int r, int k) {
+    if (l == r) {
+      return nums[k]; // 代码排序结束, 直接取下标节点
+    }
+
+    int x = nums[l]; // 最左边基准数
+    int i = l - 1;
+    int j = r + 1;
+    while (i < j) {
+      do i++; while (nums[i] < x);
+      do j--; while (nums[j] > x);
+      if (i < j) {
+        int tmp = nums[i];
+        nums[i] = nums[j];
+        nums[j] = tmp;
+      }
+    }
+
+    if (k <= j) {
+      return quickSelect(nums, l, j, k);
+    } else {
+      return quickSelect(nums, j + 1, r, k);
+    }
+  }
+
   public static void main(String[] args) {
     int[] nums = {3, 2, 1, 5, 6, 4};
-    System.out.println(findKthLargest(nums, 2));
+    System.out.println(findKthLargest1(nums, 2));
   }
 }
