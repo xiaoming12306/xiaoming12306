@@ -1,4 +1,4 @@
-package org.person.interview.array;
+package org.person.interview.twozhizhen;
 
 import java.util.ArrayList;
 import java.util.Arrays;
@@ -69,7 +69,7 @@ public class ThreeNumSum_15 {
   }
 
   public static void main(String[] args) {
-    int[] num = {0, 0, 0};
+    int[] num = {-1, 0, 0, 1, 2};
     System.out.println(threeNum(num));
   }
 }

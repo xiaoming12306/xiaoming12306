@@ -1,4 +1,4 @@
-package org.person.interview.hs
+package org.person.interview.huisu
 
 import scala.collection.mutable.ListBuffer
 

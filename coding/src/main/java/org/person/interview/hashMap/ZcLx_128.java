@@ -1,4 +1,4 @@
-package org.person.interview.HashMap;
+package org.person.interview.hashMap;
 
 import java.util.HashSet;
 import java.util.Set;
